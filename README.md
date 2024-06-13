@@ -71,9 +71,6 @@ O frontend foi desenvolvido utilizando Streamlit em Python. A interface gráfica
 
 ![Diagrama da Arquitetura](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20111132.png?raw=true)
 
-A estrutura da API REST segue o seguinte padrão:
-
-
 ## Considerações Finais
 
 Certifique-se de compreender a estrutura de precificação dos serviços da AWS antes de começar a utilizá-los. Nomeie os recursos com seu nome para facilitar a identificação posteriormente.
