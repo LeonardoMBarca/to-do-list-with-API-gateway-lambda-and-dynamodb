@@ -29,7 +29,7 @@ A API oferece as seguintes funcionalidades:
 
 ## Arquitetura da AWS
 
-![Diagrama da Arquitetura](https://url-da-sua-imagem-aws-architecture.png)
+![Diagrama da Arquitetura]([https://url-da-sua-imagem-aws-architecture.png](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20103805.png?raw=true))
 
 ### Componentes da Arquitetura
 
