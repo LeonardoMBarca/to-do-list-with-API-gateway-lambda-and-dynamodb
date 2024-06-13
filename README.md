@@ -69,6 +69,8 @@ O frontend foi desenvolvido utilizando Streamlit em Python. A interface gráfica
 
 ## Estrutura da API REST
 
+![Diagrama da Arquitetura](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20111132.png?raw=true)
+
 A estrutura da API REST segue o seguinte padrão:
 
 
