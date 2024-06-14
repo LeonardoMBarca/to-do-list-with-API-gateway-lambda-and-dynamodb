@@ -1,78 +1,78 @@
-# Sistema de Gerenciamento de Tarefas - Arquitetura Serverless na AWS
+# Task Management System - Serverless Architecture on AWS
 
-Este projeto implementa um sistema de gerenciamento de tarefas utilizando arquitetura serverless na AWS, integrando serviços como Amazon API Gateway, AWS Lambda e Amazon DynamoDB. O sistema oferece uma API REST para realizar operações CRUD (Create, Read, Update, Delete) em listas de tarefas e seus itens associados.
+This project implements a task management system using serverless architecture on AWS, integrating services such as Amazon API Gateway, AWS Lambda, and Amazon DynamoDB. The system offers a REST API to perform CRUD (Create, Read, Update, Delete) operations on task lists and their associated items.
 
-## Desafio e Objetivo
+## Challenge and Objective
 
-### Contexto do Desafio
+### Challenge Context
 
-Você foi contratado pela Tech Solutions para desenvolver e implementar a infraestrutura na AWS para um sistema de gerenciamento de tarefas. O projeto requer o uso das melhores práticas de arquitetura de nuvem para garantir escalabilidade e eficiência.
+You've been hired by Tech Solutions to develop and implement the AWS infrastructure for a task management system. The project requires the use of best cloud architecture practices to ensure scalability and efficiency.
 
-### Objetivo
+### Objective
 
-O objetivo deste desafio é criar uma aplicação serverless na AWS que utilize Amazon API Gateway para expor endpoints RESTful, AWS Lambda para processar lógica de negócios e Amazon DynamoDB para armazenar os dados das tarefas e seus itens.
+The objective of this challenge is to create a serverless application on AWS that utilizes Amazon API Gateway to expose RESTful endpoints, AWS Lambda to process business logic, and Amazon DynamoDB to store task data and its associated items.
 
-## Funcionalidades da API
+## API Features
 
-A API oferece as seguintes funcionalidades:
+The API offers the following functionalities:
 
-- **Listar todas as listas de tarefas**
-- **Obter uma lista de tarefas específica**
-- **Criar uma nova lista de tarefas**
-- **Editar uma lista de tarefas existente**
-- **Apagar uma lista de tarefas**
-- **Adicionar itens a uma lista de tarefas**
-- **Listar os itens de uma lista de tarefas**
-- **Remover itens de uma lista de tarefas**
-- **Editar um item de uma lista de tarefas**
-- **Marcar um item como concluído**
+- **List all task lists**
+- **Get a specific task list**
+- **Create a new task list**
+- **Edit an existing task list**
+- **Delete a task list**
+- **Add items to a task list**
+- **List items in a task list**
+- **Remove items from a task list**
+- **Edit an item in a task list**
+- **Mark an item as completed**
 
-## Arquitetura da AWS
+## AWS Architecture
 
-![Diagrama da Arquitetura](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20103805.png?raw=true)
+![Architecture Diagram](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20103805.png?raw=true)
 
-### Componentes da Arquitetura
+### Architecture Components
 
-- **Amazon API Gateway:** Ponto de entrada para o sistema, gerenciando as requisições HTTP e roteando-as para as funções Lambda apropriadas.
-- **AWS Lambda:** Serviço de computação serverless que executa o código em resposta a eventos, como as requisições do API Gateway.
-- **Amazon DynamoDB:** Banco de dados NoSQL totalmente gerenciado, utilizado para armazenar as listas de tarefas e seus itens.
+- **Amazon API Gateway:** Entry point for the system, managing HTTP requests and routing them to appropriate Lambda functions.
+- **AWS Lambda:** Serverless compute service that executes code in response to events, such as API Gateway requests.
+- **Amazon DynamoDB:** Fully managed NoSQL database used to store task lists and their items.
 
-### Instruções para Implementação
+### Implementation Instructions
 
-1. **Desenvolvimento da Aplicação**
-   - Implemente a aplicação utilizando Python, criando funções Lambda para processar as requisições do API Gateway.
+1. **Application Development**
+   - Implement the application using Python, creating Lambda functions to process API Gateway requests.
 
-2. **Configuração do DynamoDB**
-   - Crie uma tabela no DynamoDB para armazenar as listas de tarefas, utilizando a chave primária adequada (ex.: `taskId`).
+2. **DynamoDB Configuration**
+   - Create a table in DynamoDB to store task lists, using the appropriate primary key (e.g., `taskId`).
 
-3. **Implementação das Funções Lambda**
-   - Desenvolva as funções Lambda necessárias para cada operação CRUD, configurando permissões para acessar o DynamoDB.
+3. **Lambda Function Implementation**
+   - Develop the necessary Lambda functions for each CRUD operation, configuring permissions to access DynamoDB.
 
-4. **Configuração do API Gateway**
-   - Configure uma nova API REST no Amazon API Gateway, definindo os recursos e métodos necessários para o sistema de gerenciamento de tarefas.
+4. **API Gateway Configuration**
+   - Configure a new REST API in Amazon API Gateway, defining the necessary resources and methods for the task management system.
 
-### Recursos Adicionais
+### Additional Resources
 
-- **Documentações da AWS:**
+- **AWS Documentation:**
   - [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
   - [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
   - [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
-- **Tutoriais da AWS:**
+- **AWS Tutorials:**
   - [Getting Started with Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
   - [Getting Started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
   - [Getting Started with Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html)
 
-## Frontend e Interface Gráfica
+## Frontend and GUI
 
-O frontend foi desenvolvido utilizando Streamlit em Python. A interface gráfica pode ser acessada [aqui](https://to-do-lista-with-api-gateway-lambda-and-dynamodb-j79y5hsocwqtb.streamlit.app/).
+The frontend was developed using Streamlit in Python.
 
-## Estrutura da API REST
+## REST API Structure
 
-![Diagrama da Arquitetura](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20111132.png?raw=true)
+![Architecture Diagram](https://github.com/LeonardoMBarca/to-do-lista-with-API-gateway-lambda-and-dynamodb/blob/main/images/Captura%20de%20tela%202024-06-13%20111132.png?raw=true)
 
-## Considerações Finais
+## Final Considerations
 
-Certifique-se de compreender a estrutura de precificação dos serviços da AWS antes de começar a utilizá-los. Nomeie os recursos com seu nome para facilitar a identificação posteriormente.
+Make sure to understand the pricing structure of AWS services before starting to use them. Name resources with your name for easier identification later.
 
-Para testar as operações da API, recomenda-se o uso de ferramentas como Insomnia.
+To test API operations, tools like Insomnia are recommended.
