@@ -4,7 +4,7 @@ import json
 from datetime import date
 
 # Endpoints da sua API
-API_URL = "https://96vjrkplv7.execute-api.us-east-1.amazonaws.com/to-do-list-leonardo-barca"  # Substitua pela URL da sua API
+API_URL = ""  # Substitua pela URL da sua API
 
 # Funções para interagir com a API
 def get_all_tasks():
